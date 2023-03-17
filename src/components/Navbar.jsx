@@ -2,11 +2,12 @@ import { Badge } from "@material-ui/core";
 import { Search, ShoppingCartOutlined } from "@material-ui/icons";
 import React from "react";
 import styled from "styled-components";
-import { mobile } from "../responsive";
+import { mobile, tablet } from "../responsive";
 
 const Container = styled.div`
   height: 60px;
   ${mobile( {height: "50px"} )}
+  ${tablet( {height: "70px"} )}
 `;
 
 const Wrapper = styled.div`
@@ -15,6 +16,7 @@ const Wrapper = styled.div`
   align-items: center;
   justify-content: space-between;
   ${mobile({ padding: "10px 0px" })}
+  ${tablet({ padding: "10px 0px" })}
 `;
 
 const Left = styled.div`
@@ -40,6 +42,7 @@ const SearchContainer = styled.div`
 const Input = styled.input`
   border: none;
   ${mobile({ width: "50px" })}
+  ${tablet({ width: "55px" })}
 `;
 
 const Center = styled.div`
@@ -50,6 +53,7 @@ const Center = styled.div`
 const Logo = styled.h1`
   font-weight: bold;
   ${mobile({ fontSize: "24px" })}
+  ${tablet({ fontSize: "26px" })}
 `;
 const Right = styled.div`
   flex: 1;
@@ -57,6 +61,7 @@ const Right = styled.div`
   align-items: center;
   justify-content: flex-end;
   ${mobile({ flex: 2, justifyContent: "center" })}
+  ${tablet({ flex: 2, justifyContent: "center" })}
 `;
 
 const MenuItem = styled.div`
@@ -64,6 +69,7 @@ const MenuItem = styled.div`
   cursor: pointer;
   margin-left: 25px;
   ${mobile({ fontSize: "12px", marginLeft: "10px" })}
+  ${tablet({ fontSize: "14px", marginLeft: "12px" })}
 `;
 
 const Navbar = () => {
